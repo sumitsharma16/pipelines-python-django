@@ -31,6 +31,7 @@ steps:
     python -m pip install --upgrade pip setuptools wheel django
     pip install -r requirements.txt
     pip install unittest-xml-reporting
+    pip install twine
       
   displayName: 'Install prerequisites'
 
