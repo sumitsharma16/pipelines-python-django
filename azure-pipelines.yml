@@ -46,7 +46,7 @@ steps:
   inputs:
     testResultsFiles: "**/TEST-*.xml"
     testRunTitle: 'Python $(PYTHON_VERSION)'
-- script: twine upload --repository-url https://pkgs.dev.azure.com/sumitshar0/_packaging/sumitshar0/pypi/upload
+- script: twine upload --repository-url https://pkgs.dev.azure.com/sumitshar0/_packaging/sumitshar0/pypi/upload dist/*
 
 
 
