@@ -35,6 +35,10 @@ steps:
       
   displayName: 'Install prerequisites'
 
+- script: python setup.py sdist bdist_wheel
+  displayName: 'Running Setup.py'
+
+
 - script: |
     pushd '$(projectRoot)'
     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
